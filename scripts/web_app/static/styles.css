@@ -1,0 +1,138 @@
+/* static/styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right select, .header-right a, .header-right span {
+    margin-left: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header-right a:hover, .header-right select:hover {
+    background-color: darkblue;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.location-input, .date-input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#predict-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+#predict-btn:hover {
+    background-color: darkgreen;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto 20px;
+    border: 2px solid blue;
+}
+
+.centered-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#prediction-graph {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border: 2px solid blue;
+}
+
+.input-field {
+    width: 200px;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: block;
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: white;
+}
