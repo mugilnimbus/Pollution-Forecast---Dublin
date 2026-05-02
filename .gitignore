@@ -1,6 +1,7 @@
 /.conda
 /data
 /logs
+/extras
 /requirements.txt
 __pycache__/
 *.pyc
