@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+{% include 'header.html' %}
+
+<div class="main-content">
+    <input type="text" id="locationCoordinates" placeholder="Enter Location Coordinates">
+    <button id="fetchLocation">Fetch Device Location</button>
+    <div class="history">
+        <h3>History</h3>
+        <!-- History items go here -->
+    </div>
+    <div class="map">
+        <!-- Your interactive map integration -->
+    </div>
+    <input type="date" id="selectDate">
+    <div class="graph">
+        <!-- Graph will be displayed here -->
+    </div>
+</div>

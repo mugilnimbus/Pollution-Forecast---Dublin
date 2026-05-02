@@ -1,0 +1,24 @@
+<!-- templates/signup.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Pollution Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+{% include 'header.html' %}
+
+<div class="main-content">
+    <form action="{{ url_for('signup') }}" method="post">
+        <input type="text" name="username" placeholder="Username" required class="input-field">
+        <input type="password" name="password" placeholder="Password" required class="input-field">
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="{{ url_for('signin') }}">Sign In</a></p>
+    </form>
+</div>
+
+</body>
+</html>

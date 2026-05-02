@@ -1,0 +1,26 @@
+<!-- templates/header.html -->
+
+<div class="header">
+    <!-- Logo or text on the left -->
+    <div class="header-left">
+        <h1>Pollution Prediction</h1>
+    </div>
+
+    <!-- City dropdown and Sign in button on the right -->
+    <div class="header-right">
+        <!-- Dropdown for cities -->
+        <select id="city-dropdown">
+            <option value="dublin">Dublin</option>
+            <option value="city2">City 2</option>
+            <!-- ... and so on -->
+        </select>
+
+        <!-- Sign In button -->
+        {% if 'username' in session %}
+            <span>Welcome, {{ session['username'] }}</span>
+            <a href="{{ url_for('logout') }}" class="signin-btn">Logout</a>
+        {% else %}
+            <a href="{{ url_for('signin') }}" class="signin-btn">Sign In</a>
+        {% endif %}
+    </div>
+</div>
