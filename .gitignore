@@ -2,3 +2,5 @@
 /data
 /logs
 /requirements.txt
+__pycache__/
+*.pyc
